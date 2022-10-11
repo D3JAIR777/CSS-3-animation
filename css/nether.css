@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**css-animation**/
+@keyframes cabeca2 {
+    0%{-webkit-transform: rotate(0deg);}
+    15%{-webkit-transform: rotate(5deg);}
+
+    25%{-webkit-transform: rotate(0deg);}
+
+    50%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco3 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(5deg);}
+    10%{-webkit-transform: rotate(10deg);}
+    20%{-webkit-transform: rotate(15deg);}
+
+    30%{-webkit-transform: rotate(10deg);}
+    40%{-webkit-transform: rotate(5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+    80%{-webkit-transform: rotate(-15deg);}
+
+    90%{-webkit-transform: rotate(-10deg);}
+    95%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco4 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(-5deg);}
+    10%{-webkit-transform: rotate(-10deg);}
+    20%{-webkit-transform: rotate(-15deg);}
+
+    30%{-webkit-transform: rotate(-10deg);}
+    40%{-webkit-transform: rotate(-5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+    80%{-webkit-transform: rotate(15deg);}
+
+    90%{-webkit-transform: rotate(10deg);}
+    95%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes tronco2 {
+    0%{-webkit-transform: rotate(0deg);}
+    25%{-webkit-transform: rotate(5deg);}
+
+    50%{-webkit-transform: rotate(0deg);}
+    75%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+   
+}
+@keyframes perna3 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(5deg);}
+    20%{-webkit-transform: rotate(10deg);}
+
+    30%{-webkit-transform: rotate(5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+
+    80%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes perna4 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(-5deg);}
+    20%{-webkit-transform: rotate(-10deg);}
+
+    30%{-webkit-transform: rotate(-5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+
+    80%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes chao3{
+    100%{left: 0px;}
+}
+@keyframes chao4{
+    0%{right: 1000px;}
+    50%{right: 2000px;}
+    100%{right: 3000px;}
+    
+}
+/**css-no-animation**/
+
+/*cabeça e tronco*/
+#cabe2{
+    position: absolute;
+    top: 255.5%;
+    margin-left: 20%;
+    z-index: 5;
+    animation:cabeca2 2s infinite linear;
+    -webkit-animation:cabeca2 2s infinite linear;
+    -moz-animation:cabeca2 2s infinite linear;
+    
+}
+
+#tron2{
+    position: absolute;
+    top: 268.4%;
+    margin-left: 21%;
+    z-index: 4;
+    animation:tronco2 2s infinite linear;
+    -webkit-animation:tronco2 2s infinite linear;
+    -moz-animation:tronco2 2s infinite linear;
+}
+
+/*braços*/
+#bra-3{
+    position: absolute;
+    top: 268.4%;
+    margin-left: 21%;
+    z-index: 6;
+    animation:braco3 2s infinite linear;
+    -webkit-animation:braco3 2s infinite linear;
+    -moz-animation:braco3 2s infinite linear;
+}
+#bra-4{
+    position: absolute;
+    top: 269.4%;
+    margin-left: 21%;
+    z-index: 3;
+    animation:braco4 2s infinite linear;
+    -webkit-animation:braco4 2s infinite linear;
+    -moz-animation:braco4 2s infinite linear;
+    
+}
+/*pernas-sapatos*/
+
+#per-3{
+    position: absolute;
+    top: 283.8%;
+    margin-left: 21%;
+    z-index: 5;
+    animation:perna3 2s infinite linear;
+    -webkit-animation:perna3 2s infinite linear;
+    -moz-animation:perna3 2s infinite linear;
+}
+#per-4{
+    position: absolute;
+    top: 283.8%;
+    margin-left: 21%;
+    z-index: 3;
+    animation:perna4 2s infinite linear;
+    -webkit-animation:perna4 2s infinite linear;
+    -moz-animation:perna4 2s infinite linear;
+}
+
+/*chao*/
+#chao2{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/netherack.png);
+    margin-top: 100%;
+    z-index: 1;
+    position: relative;
+    animation-name: chao3;
+    animation-duration: 0s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#chao2{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/netherack.png);
+    margin-top: 100%;
+    z-index: 2;
+    position: relative;
+    animation-name: chao4;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#chao2{
+    width: 100000%;
+    height: 900px;
+    background-image: url(../img/netherack.png);
+    margin-top: 100%;
+    z-index: 2;
+    position: relative;
+    animation-name: chao4;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}

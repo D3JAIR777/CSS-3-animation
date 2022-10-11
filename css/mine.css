@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**css-animation**/
+@keyframes cabeca {
+    0%{-webkit-transform: rotate(0deg);}
+    15%{-webkit-transform: rotate(5deg);}
+
+    25%{-webkit-transform: rotate(0deg);}
+
+    50%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(5deg);}
+    10%{-webkit-transform: rotate(10deg);}
+    20%{-webkit-transform: rotate(15deg);}
+
+    30%{-webkit-transform: rotate(10deg);}
+    40%{-webkit-transform: rotate(5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+    80%{-webkit-transform: rotate(-15deg);}
+
+    90%{-webkit-transform: rotate(-10deg);}
+    95%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco2 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(-5deg);}
+    10%{-webkit-transform: rotate(-10deg);}
+    20%{-webkit-transform: rotate(-15deg);}
+
+    30%{-webkit-transform: rotate(-10deg);}
+    40%{-webkit-transform: rotate(-5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+    80%{-webkit-transform: rotate(15deg);}
+
+    90%{-webkit-transform: rotate(10deg);}
+    95%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes tronco {
+    0%{-webkit-transform: rotate(0deg);}
+    25%{-webkit-transform: rotate(5deg);}
+
+    50%{-webkit-transform: rotate(0deg);}
+    75%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+   
+}
+@keyframes perna {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(5deg);}
+    20%{-webkit-transform: rotate(10deg);}
+
+    30%{-webkit-transform: rotate(5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+
+    80%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes perna2 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(-5deg);}
+    20%{-webkit-transform: rotate(-10deg);}
+
+    30%{-webkit-transform: rotate(-5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+
+    80%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes chao{
+    100%{left: 0px;}
+}
+@keyframes chao2{
+    0%{right: 1000px;}
+    50%{right: 2000px;}
+    100%{right: 3000px;}
+    
+}
+/**css-no-animation**/
+
+/*cabeça e tronco*/
+#cabe{
+    position: absolute;
+    top: 265.5%;
+    margin-left: 20%;
+    z-index: 4;
+    animation:cabeca 2s infinite linear;
+    -webkit-animation:cabeca 2s infinite linear;
+    -moz-animation:cabeca 2s infinite linear;
+    
+}
+
+#tron{
+    position: absolute;
+    top: 277.4%;
+    margin-left: 21%;
+    z-index: 4;
+    animation:tronco 2s infinite linear;
+    -webkit-animation:tronco 2s infinite linear;
+    -moz-animation:tronco 2s infinite linear;
+}
+
+/*braços*/
+#bra-1{
+    position: absolute;
+    top: 277.4%;
+    margin-left: 21%;
+    z-index: 6;
+    animation:braco 2s infinite linear;
+    -webkit-animation:braco 2s infinite linear;
+    -moz-animation:braco 2s infinite linear;
+}
+#bra-2{
+    position: absolute;
+    top: 277.4%;
+    margin-left: 21%;
+    z-index: 2;
+    animation:braco2 2s infinite linear;
+    -webkit-animation:braco2 2s infinite linear;
+    -moz-animation:braco2 2s infinite linear;
+    
+}
+/*pernas-sapatos*/
+
+#per-1{
+    position: absolute;
+    top: 290.8%;
+    margin-left: 21%;
+    z-index: 5;
+    animation:perna 2s infinite linear;
+    -webkit-animation:perna 2s infinite linear;
+    -moz-animation:perna 2s infinite linear;
+}
+#per-2{
+    position: absolute;
+    top: 290.8%;
+    margin-left: 21%;
+    z-index: 3;
+    animation:perna2 2s infinite linear;
+    -webkit-animation:perna2 2s infinite linear;
+    -moz-animation:perna2 2s infinite linear;
+}
+
+/*chao*/
+#chao{
+    width: 100000%;
+    height: 850px;
+    background-image: url(../img/grass.png);
+    margin-top: 100%;
+    z-index: 0;
+    position: relative;
+    animation-name: chao;
+    animation-duration: 0s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#chao{
+    width: 100000%;
+    height: 850px;
+    background-image: url(../img/grass.png);
+    margin-top: 100%;
+    z-index: 0;
+    position: relative;
+    animation-name: chao2;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#chao{
+    width: 100000%;
+    height: 850px;
+    background-image: url(../img/grass.png);
+    margin-top: 100%;
+    z-index: 0;
+    position: relative;
+    animation-name: chao2;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#ga1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 280.8%;
+    margin-left: 40%;
+    z-index: 3;
+}
+#ga2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 280.8%;
+    margin-left: 80%;
+    z-index: 3;
+}

@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**css-animation**/
+@keyframes cabeca3 {
+    0%{-webkit-transform: rotate(0deg);}
+    15%{-webkit-transform: rotate(5deg);}
+
+    25%{-webkit-transform: rotate(0deg);}
+
+    50%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco5 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(5deg);}
+    10%{-webkit-transform: rotate(10deg);}
+    20%{-webkit-transform: rotate(15deg);}
+
+    30%{-webkit-transform: rotate(10deg);}
+    40%{-webkit-transform: rotate(5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+    80%{-webkit-transform: rotate(-15deg);}
+
+    90%{-webkit-transform: rotate(-10deg);}
+    95%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco6 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(-5deg);}
+    10%{-webkit-transform: rotate(-10deg);}
+    20%{-webkit-transform: rotate(-15deg);}
+
+    30%{-webkit-transform: rotate(-10deg);}
+    40%{-webkit-transform: rotate(-5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+    80%{-webkit-transform: rotate(15deg);}
+
+    90%{-webkit-transform: rotate(10deg);}
+    95%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes tronco3 {
+    0%{-webkit-transform: rotate(0deg);}
+    25%{-webkit-transform: rotate(5deg);}
+
+    50%{-webkit-transform: rotate(0deg);}
+    75%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+   
+}
+@keyframes perna5 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(5deg);}
+    20%{-webkit-transform: rotate(10deg);}
+
+    30%{-webkit-transform: rotate(5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+
+    80%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes perna6 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(-5deg);}
+    20%{-webkit-transform: rotate(-10deg);}
+
+    30%{-webkit-transform: rotate(-5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+
+    80%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes chao5{
+    100%{left: 0px;}
+}
+@keyframes chao6{
+    0%{right: 1000px;}
+    50%{right: 2000px;}
+    100%{right: 3000px;}
+    
+}
+/**css-no-animation**/
+
+/*cabeça e tronco*/
+#cabe3{
+    position: absolute;
+    top: 237.5%;
+    margin-left: 49%;
+    z-index: 8;
+    animation:cabeca3 2s infinite linear;
+    -webkit-animation:cabeca3 2s infinite linear;
+    -moz-animation:cabeca3 2s infinite linear;
+    
+}
+
+#tron3{
+    position: absolute;
+    top: 250.4%;
+    margin-left: 50%;
+    z-index: 8;
+    animation:tronco3 2s infinite linear;
+    -webkit-animation:tronco3 2s infinite linear;
+    -moz-animation:tronco3 2s infinite linear;
+}
+
+/*braços*/
+#bra-5{
+    position: absolute;
+    top: 250.4%;
+    margin-left: 50%;
+    z-index: 9;
+    animation:braco5 2s infinite linear;
+    -webkit-animation:braco5 2s infinite linear;
+    -moz-animation:braco5 2s infinite linear;
+}
+#bra-6{
+    position: absolute;
+    top: 250.4%;
+    margin-left: 50%;
+    z-index: 7;
+    animation:braco6 2s infinite linear;
+    -webkit-animation:braco6 2s infinite linear;
+    -moz-animation:braco6 2s infinite linear;
+    
+}
+/*pernas-sapatos*/
+
+#per-5{
+    position: absolute;
+    top: 263.8%;
+    margin-left: 50%;
+    z-index: 8;
+    animation:perna5 2s infinite linear;
+    -webkit-animation:perna5 2s infinite linear;
+    -moz-animation:perna5 2s infinite linear;
+}
+/*chao*/
+#chao3{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/end.png);
+    margin-top: 100%;
+    z-index: 1;
+    position: relative;
+    animation-name: chao5;
+    animation-duration: 0s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#chao3{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/end.png);
+    margin-top: 100%;
+    z-index: 2;
+    position: relative;
+    animation-name: chao6;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+#chao3{
+    width: 100000%;
+    height: 900px;
+    background-image: url(../img/end.png);
+    margin-top: 100%;
+    z-index: 2;
+    position: relative;
+    animation-name: chao6;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite ;
+}
+
+
+/***ENDER--DRAGON****/
+#cabe4{
+    position: absolute;
+    top: 260.5%;
+    margin-left: 60%;
+    z-index: 4;
+    animation:cabeca3 2s infinite linear;
+    -webkit-animation:cabeca3 2s infinite linear;
+    -moz-animation:cabeca3 2s infinite linear;
+    
+}
+
+#tron4{
+    position: absolute;
+    top: 267.4%;
+    margin-left: 30%;
+    z-index: 4;
+    animation:tronco3 2s infinite linear;
+    -webkit-animation:tronco3 2s infinite linear;
+    -moz-animation:tronco3 2s infinite linear;
+}
+
+/*braços*/
+#per-7{
+    position: absolute;
+    top: 280%;
+    margin-left: 60%;
+    z-index: 6;
+    animation:perna7 2s infinite linear;
+    -webkit-animation:perna7 2s infinite linear;
+    -moz-animation:perna7 2s infinite linear;
+}
+#per-8{
+    position: absolute;
+    top: 281%;
+    margin-left: 30%;
+    z-index: 3;
+    animation:perna8 2s infinite linear;
+    -webkit-animation:perna8 2s infinite linear;
+    -moz-animation:perna8 2s infinite linear;
+    
+}
+#per-7{
+    position: absolute;
+    top: 280%;
+    margin-left: 60%;
+    z-index: 6;
+    animation:braco7 2s infinite linear;
+    -webkit-animation:braco7 2s infinite linear;
+    -moz-animation:braco7 2s infinite linear;
+}
+#per-8{
+    position: absolute;
+    top: 281%;
+    margin-left: 30%;
+    z-index: 3;
+    animation:braco8 2s infinite linear;
+    -webkit-animation:braco8 2s infinite linear;
+    -moz-animation:braco8 2s infinite linear;
+    
+}
+#cal{
+    position: absolute;
+    top: 260%;
+    margin-left: 10%;
+    z-index: 6;
+    animation:calda 2s infinite linear;
+    -webkit-animation:calda 2s infinite linear;
+    -moz-animation:calda 2s infinite linear;
+}
+#asa-1{
+    position: absolute;
+    top: 252%;
+    margin-left: 35%;
+    z-index: 6;
+    animation:asa1 2s infinite linear;
+    -webkit-animation:asa1 2s infinite linear;
+    -moz-animation:asa1 2s infinite linear;
+}
+#asa-2{
+    position: absolute;
+    top: 252%;
+    margin-left: 35%;
+    z-index: 3;
+    animation:asa2 2s infinite linear;
+    -webkit-animation:asa2 2s infinite linear;
+    -moz-animation:asa2 2s infinite linear;
+}
+#corre{
+    position: absolute;
+    top: 265%;
+    z-index: 5;
+    margin-left: 92%;
+}
+#kid{
+    position: absolute;
+    top: 255%;
+    z-index: 6;
+    margin-left: 100%;
+}
+@keyframes asa1 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(5deg);}
+    10%{-webkit-transform: rotate(10deg);}
+    15%{-webkit-transform: rotate(15deg);}
+    20%{-webkit-transform: rotate(20deg);}
+    30%{-webkit-transform: rotate(25deg);}
+
+    40%{-webkit-transform: rotate(20deg);}
+    50%{-webkit-transform: rotate(15deg);}
+    60%{-webkit-transform: rotate(10deg);}
+    70%{-webkit-transform: rotate(5deg);}
+    75%{-webkit-transform: rotate(0deg);}
+
+    76%{-webkit-transform: rotate(-5deg);}
+    78%{-webkit-transform: rotate(-10deg);}
+    80%{-webkit-transform: rotate(-15deg);}
+    81%{-webkit-transform: rotate(-20deg);}
+    85%{-webkit-transform: rotate(-15deg);}
+
+    90%{-webkit-transform: rotate(-10deg);}
+    95%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes asa2 {
+        0%{-webkit-transform: rotate(0deg);}
+        10%{-webkit-transform: rotate(5deg);}
+        15%{-webkit-transform: rotate(10deg);}
+        20%{-webkit-transform: rotate(15deg);}
+        22%{-webkit-transform: rotate(20deg);}
+        25%{-webkit-transform: rotate(25deg);}
+        29%{-webkit-transform: rotate(30deg);}
+        30%{-webkit-transform: rotate(40deg);}
+    
+        40%{-webkit-transform: rotate(30deg);}
+        50%{-webkit-transform: rotate(25deg);}
+        60%{-webkit-transform: rotate(20deg);}
+        70%{-webkit-transform: rotate(10deg);}
+        74%{-webkit-transform: rotate(5deg);}
+        75%{-webkit-transform: rotate(0deg);}
+    
+        76%{-webkit-transform: rotate(-5deg);}
+        78%{-webkit-transform: rotate(-10deg);}
+        80%{-webkit-transform: rotate(-15deg);}
+        81%{-webkit-transform: rotate(-20deg);}
+        85%{-webkit-transform: rotate(-15deg);}
+    
+        90%{-webkit-transform: rotate(-10deg);}
+        95%{-webkit-transform: rotate(-5deg);}
+        100%{-webkit-transform: rotate(0deg);}
+    
+    }
+@keyframes calda {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(5deg);}
+    10%{-webkit-transform: rotate(10deg);}
+    20%{-webkit-transform: rotate(15deg);}
+
+    30%{-webkit-transform: rotate(10deg);}
+    40%{-webkit-transform: rotate(5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+    80%{-webkit-transform: rotate(-15deg);}
+
+    90%{-webkit-transform: rotate(-10deg);}
+    95%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco7 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(5deg);}
+    10%{-webkit-transform: rotate(10deg);}
+    20%{-webkit-transform: rotate(15deg);}
+
+    30%{-webkit-transform: rotate(10deg);}
+    40%{-webkit-transform: rotate(5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+    80%{-webkit-transform: rotate(-15deg);}
+
+    90%{-webkit-transform: rotate(-10deg);}
+    95%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes braco8 {
+    0%{-webkit-transform: rotate(0deg);}
+    5%{-webkit-transform: rotate(-5deg);}
+    10%{-webkit-transform: rotate(-10deg);}
+    20%{-webkit-transform: rotate(-15deg);}
+
+    30%{-webkit-transform: rotate(-10deg);}
+    40%{-webkit-transform: rotate(-5deg);}
+    50%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+    80%{-webkit-transform: rotate(15deg);}
+
+    90%{-webkit-transform: rotate(10deg);}
+    95%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes tronco4 {
+    0%{-webkit-transform: rotate(0deg);}
+    25%{-webkit-transform: rotate(5deg);}
+
+    50%{-webkit-transform: rotate(0deg);}
+    75%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+   
+}
+@keyframes perna7 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(5deg);}
+    20%{-webkit-transform: rotate(10deg);}
+
+    30%{-webkit-transform: rotate(5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(-5deg);}
+    70%{-webkit-transform: rotate(-10deg);}
+
+    80%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+@keyframes perna8 {
+    0%{-webkit-transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(-5deg);}
+    20%{-webkit-transform: rotate(-10deg);}
+
+    30%{-webkit-transform: rotate(-5deg);}
+    40%{-webkit-transform: rotate(0deg);}
+
+    60%{-webkit-transform: rotate(5deg);}
+    70%{-webkit-transform: rotate(10deg);}
+
+    80%{-webkit-transform: rotate(5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+
+}
+#chamas{
+    position: absolute;
+    top: 270%;
+    z-index: 3;
+    margin-left: 73%;
+}
